@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1120">
+  <meta name="description" content="FotoN pomaže fotografima da organizuju fotografije po licima, podele lične QR galerije i prikupe tačan izbor za štampu.">
+  <title>FotoN — fotografije koje gosti zaista žele</title>
+  <link rel="icon" href="assets/foton-icon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/foton-logo.svg" as="image" type="image/svg+xml">
+  <style>
+    :root{color-scheme:dark;--bg:#0b1120;--panel:#111b2c;--panel-2:#17243a;--line:#2b3a54;--ink:#f5f7fc;--muted:#bac6d9;--subtle:#8999b3;--blue:#526fe5;--blue-light:#a9baff;--mint:#72ddce;--gold:#f3c776;--max:1160px;font-family:Inter,"Segoe UI",Arial,sans-serif;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.55}a{color:inherit}.skip{position:absolute;left:-9999px;top:12px;background:#fff;color:#111;padding:10px 14px;border-radius:8px;z-index:20}.skip:focus{left:12px}.wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}.topbar{position:sticky;top:0;z-index:10;background:rgba(11,17,32,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(174,191,224,.12)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{display:flex;align-items:center;flex:none}.logo img{width:148px;height:auto;display:block}.navlinks{display:flex;align-items:center;gap:26px}.navlinks a{text-decoration:none;color:#d3dced;font-size:14px;font-weight:600}.navlinks a:hover{color:var(--mint)}.navcta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;border:1px solid transparent;border-radius:12px;padding:12px 18px;background:var(--blue);color:white;font:inherit;font-size:14px;font-weight:750;box-shadow:0 8px 22px rgba(54,80,194,.2);transition:transform .18s ease,background .18s ease,border-color .18s ease}.navcta:hover,.button:hover{transform:translateY(-2px);background:#617df1}.button.secondary{background:transparent;border-color:#465675;color:#e6ecf8;box-shadow:none}.button.secondary:hover{border-color:var(--mint);background:rgba(114,221,206,.06)}.menu-toggle{display:none;background:none;color:var(--ink);border:1px solid var(--line);border-radius:10px;width:44px;height:42px;font-size:22px}.hero{position:relative;overflow:hidden;padding:66px 0 70px;background:radial-gradient(ellipse at 82% 18%,rgba(82,111,229,.22),transparent 35%),radial-gradient(ellipse at 10% 80%,rgba(23,154,139,.11),transparent 36%),linear-gradient(145deg,#0b1120,#101a2c 72%,#111c30)}.hero:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:radial-gradient(#a8b8dc 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(100deg,transparent 20%,#000 100%)}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 11px;border:1px solid rgba(114,221,206,.25);border-radius:99px;background:rgba(114,221,206,.07);color:var(--mint);font-size:11px;letter-spacing:.09em;font-weight:800;text-transform:uppercase}.eyebrow i{display:block;width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 14px var(--mint)}h1{max-width:680px;font-size:clamp(42px,5.5vw,68px);letter-spacing:-.055em;line-height:1.04;margin:22px 0 20px}h1 em{font-style:normal;color:var(--blue-light)}.hero-copy{max-width:610px;color:#c4cede;font-size:18px;line-height:1.7;margin:0}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.microcopy{margin-top:17px;color:#91a2bd;font-size:12px}.hero-visual{min-height:456px;position:relative;display:grid;place-items:center}.flow-card{width:min(100%,510px);border:1px solid #34435d;background:rgba(17,27,44,.95);border-radius:22px;padding:22px;box-shadow:0 28px 90px rgba(0,0,0,.35);transform:rotate(-1deg)}.windowbar{display:flex;align-items:center;gap:7px;border-bottom:1px solid #2a3851;padding-bottom:15px;color:#b8c5d9;font-size:12px;font-weight:700}.dot{width:8px;height:8px;border-radius:50%;background:#ff747b}.dot:nth-child(2){background:#ffc46d}.dot:nth-child(3){background:#66d5a0}.windowbar span:last-child{margin-left:7px}.flow-title{display:flex;align-items:center;justify-content:space-between;margin:20px 0 17px}.flow-title strong{font-size:17px}.live-pill{border:1px solid #296f67;background:#163b3a;color:#8ce5d7;border-radius:99px;padding:5px 9px;font-size:10px;font-weight:800}.flow-steps{display:grid;gap:10px}.flow-step{display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:13px;border:1px solid #2e3d56;background:#16233a;border-radius:13px;padding:12px}.step-num{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#293c68;color:var(--blue-light);font-weight:800;font-size:12px}.flow-step b{display:block;font-size:13px}.flow-step small{display:block;color:#92a1b8;font-size:11px;margin-top:3px}.check{color:var(--mint);font-size:19px;font-weight:800}.flow-foot{display:flex;align-items:center;gap:10px;margin-top:15px;padding-top:14px;border-top:1px solid #2a3851;color:#aab8cc;font-size:11px}.flow-foot b{color:var(--gold)}.float-chip{position:absolute;border:1px solid #364766;border-radius:14px;background:#1a2a45;box-shadow:0 16px 34px #05091277;padding:10px 13px;color:#e4eafa;font-size:11px;font-weight:750}.chip-qr{right:-8px;top:70px;transform:rotate(4deg)}.chip-local{left:0;bottom:44px;transform:rotate(-5deg)}.section{padding:88px 0}.section.light{background:#f5f7fb;color:#142035}.section-head{max-width:720px;margin:0 auto 38px;text-align:center}.section-head .eyebrow{margin-bottom:12px}.section-head h2{margin:0;font-size:clamp(30px,4vw,46px);line-height:1.12;letter-spacing:-.04em}.section-head p{color:#647289;font-size:16px;line-height:1.65;margin:15px auto 0;max-width:680px}.section-head.invert p{color:#aebbd0}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.benefit{border:1px solid #dfe5ef;background:white;border-radius:17px;padding:22px;min-height:190px;box-shadow:0 8px 24px #14203508}.benefit-icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:#e8edff;color:#435fd0;font-size:17px;font-weight:900;margin-bottom:19px}.benefit:nth-child(2) .benefit-icon{background:#e3f7f2;color:#168876}.benefit:nth-child(3) .benefit-icon{background:#fff3dd;color:#aa7422}.benefit h3{font-size:17px;margin:0 0 7px;letter-spacing:-.02em}.benefit p{font-size:14px;color:#68758a;margin:0;line-height:1.6}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.process-card{position:relative;padding:21px 18px;border:1px solid #2b3951;border-radius:16px;background:linear-gradient(150deg,#121e31,#101827);min-height:205px}.process-card .num{color:var(--mint);font-size:12px;font-weight:850;letter-spacing:.07em}.process-card h3{font-size:17px;line-height:1.25;margin:17px 0 8px}.process-card p{font-size:13px;color:#a9b6cb;margin:0;line-height:1.6}.process-card:after{content:"→";position:absolute;right:-14px;top:45%;z-index:1;width:27px;height:27px;display:grid;place-items:center;border:1px solid #3b4b67;background:#192944;border-radius:50%;color:#a9baff;font-size:13px}.process-card:last-child:after{display:none}.local-lab{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}.info-panel{border:1px solid #2b3b55;border-radius:18px;padding:25px;background:#121e31}.info-panel .label{color:var(--mint);font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:850}.info-panel h3{font-size:21px;margin:9px 0}.info-panel p{font-size:14px;color:#adb9cd;line-height:1.7;margin:0}.info-panel.lab{background:linear-gradient(140deg,#192746,#142034);border-color:#394e75}.poster-section{background:#111b2c;padding:82px 0}.poster-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}.poster-copy h2{font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-.04em;margin:0 0 16px}.poster-copy p{color:#b7c3d6;font-size:15px;line-height:1.7}.poster{display:block;width:min(100%,520px);height:auto;margin:auto;border:1px solid #384966;border-radius:16px;box-shadow:0 20px 60px #030710aa}.poster-copy .button{margin-top:12px}.packages{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.package{border:1px solid #30415d;background:#131f32;border-radius:17px;padding:20px;min-height:218px;position:relative;overflow:hidden}.package:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--accent,var(--blue-light))}.package:nth-child(2){--accent:#71d8b3}.package:nth-child(3){--accent:#a9baff}.package:nth-child(4){--accent:#c3a4ff}.package .package-num{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--accent,var(--gold))}.package h3{font-size:16px;margin:16px 0 8px}.package p{font-size:13px;color:#aebbd0;line-height:1.6;margin:0}.package a{display:inline-flex;margin-top:15px;text-decoration:none;color:#dbe4ff;font-size:12px;font-weight:750}.package a:hover{color:var(--mint)}.trial{display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;margin-top:22px;padding:27px;border:1px solid #5c75da;border-radius:19px;background:linear-gradient(105deg,#21365e,#182844)}.trial h3{font-size:24px;margin:0 0 6px}.trial p{color:#c0cce0;margin:0;font-size:14px}.faq{max-width:850px;margin:auto;display:grid;gap:11px}.faq details{background:#fff;border:1px solid #e1e7ef;border-radius:13px;padding:17px 19px}.faq summary{cursor:pointer;font-weight:750;color:#1c2a40}.faq details p{margin:12px 0 1px;color:#647289;font-size:14px;line-height:1.65}.contact{padding:75px 0;background:radial-gradient(ellipse at 50% 100%,rgba(82,111,229,.2),transparent 55%),#0b1120}.contact-card{display:flex;align-items:center;justify-content:space-between;gap:25px;border:1px solid #34445f;border-radius:22px;background:#121e31;padding:32px}.contact-card h2{margin:0 0 9px;font-size:clamp(26px,3.5vw,38px);letter-spacing:-.04em}.contact-card p{margin:0;color:#afbdd1;font-size:14px}.contact-links{display:flex;gap:12px;flex-wrap:wrap}.footer{border-top:1px solid #26344b;padding:26px 0 30px;color:#98a7be;font-size:12px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer img{width:112px;opacity:.9}.footer-links{display:flex;gap:17px;flex-wrap:wrap}.footer-links a{color:#c5d0e1;text-decoration:none}.footer-links a:hover{color:var(--mint)}
+    @media(max-width:950px){.hero-grid{grid-template-columns:1fr;gap:25px}.hero-copy{max-width:760px}.hero-visual{min-height:410px}.flow-card{max-width:590px}.benefits{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}.process-card:nth-child(2):after{display:none}.packages{grid-template-columns:repeat(2,1fr)}.poster-grid{grid-template-columns:.9fr 1.1fr;gap:28px}}
+    @media(max-width:680px){.wrap{width:min(var(--max),calc(100% - 30px))}.nav{height:68px}.logo img{width:126px}.menu-toggle{display:block}.navcta.desktop{display:none}.navlinks{display:none;position:absolute;left:0;right:0;top:68px;background:#101a2b;border-bottom:1px solid #2b3951;padding:12px 18px 18px;align-items:stretch;flex-direction:column;gap:0}.navlinks.open{display:flex}.navlinks a{padding:12px 4px;border-bottom:1px solid #26344b}.navlinks a:last-child{border:0}.nav-mobile-cta{display:inline-flex!important;margin-top:13px}.hero{padding:52px 0 56px}.hero-grid{gap:14px}h1{font-size:clamp(39px,11vw,56px);margin:18px 0}.hero-copy{font-size:16px}.hero-visual{min-height:auto;padding:20px 0 24px}.flow-card{padding:16px;border-radius:17px;transform:none}.flow-title{margin:16px 0 13px}.flow-step{grid-template-columns:38px 1fr auto;padding:10px;gap:10px}.flow-step b{font-size:12px}.float-chip{font-size:10px}.chip-qr{right:-4px;top:0}.chip-local{left:-4px;bottom:0}.section{padding:65px 0}.section-head{margin-bottom:25px}.section-head p{font-size:14px}.benefits,.process,.local-lab,.packages{grid-template-columns:1fr}.benefit{min-height:0;padding:19px}.benefit-icon{margin-bottom:12px}.process-card{min-height:0;padding:19px}.process-card:after{content:"↓";top:auto;bottom:-14px;right:calc(50% - 13px)}.process-card:nth-child(2):after{display:grid}.poster-section{padding:62px 0}.poster-grid{grid-template-columns:1fr;gap:25px}.poster-copy{text-align:center}.poster{width:min(100%,410px)}.package{min-height:0}.trial{grid-template-columns:1fr;padding:22px}.trial .button{width:100%}.contact{padding:55px 0}.contact-card{align-items:flex-start;flex-direction:column;padding:24px}.contact-links{width:100%}.contact-links .button{flex:1}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{gap:12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="logo" href="#vrh" aria-label="FotoN, početna strana"><img src="assets/foton-logo.svg" alt="FotoN"></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <nav class="navlinks" id="navLinks" aria-label="Glavna navigacija">
+        <a href="#kako-radi">Kako radi</a><a href="#prednosti">Prednosti</a><a href="#paketi">Paketi</a><a href="#kontakt">Kontakt</a>
+        <a class="button nav-mobile-cta" href="https://wa.me/381649786665?text=Zdravo%2C%20zelim%20da%20zakazem%20besplatno%20testiranje%20FotoN-a">Zakaži besplatan test</a>
+      </nav>
+      <a class="navcta desktop" href="https://wa.me/381649786665?text=Zdravo%2C%20zelim%20da%20zakazem%20besplatno%20testiranje%20FotoN-a">Zakaži besplatno testiranje <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="sadrzaj">
+    <section class="hero" id="vrh">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><i></i> Za venčanja i proslave</div>
+          <h1>Fotografije koje gosti <em>zaista žele.</em></h1>
+          <p class="hero-copy">FotoN pomaže fotografu da pronađe lica, napravi lične QR galerije i prikupi tačan izbor gostiju za štampu.</p>
+          <div class="hero-actions"><a class="button" href="https://wa.me/381649786665?text=Zdravo%2C%20zelim%20da%20zakazem%20besplatno%20testiranje%20FotoN-a">Pozovite nas i zakažite besplatno testiranje <span aria-hidden="true">→</span></a><a class="button secondary" href="#kako-radi">Pogledaj kako radi</a></div>
+          <p class="microcopy">Jedan događaj. Lične galerije. Jasni zahtevi za štampu.</p>
+        </div>
+        <div class="hero-visual" aria-label="Koraci FotoN procesa">
+          <div class="float-chip chip-qr">▦ &nbsp; Jedan QR kod po osobi</div>
+          <div class="flow-card">
+            <div class="windowbar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>FotoN &nbsp; / &nbsp; Tok događaja</span></div>
+            <div class="flow-title"><strong>Od galerije do štampe</strong><span class="live-pill">4 JASNA KORAKA</span></div>
+            <div class="flow-steps">
+              <div class="flow-step"><span class="step-num">01</span><span><b>Dodaj fotografije</b><small>JPEG · PNG · izbor sa računara</small></span><span class="check">✓</span></div>
+              <div class="flow-step"><span class="step-num">02</span><span><b>Grupiši pronađena lica</b><small>Pregledaj predloge i po potrebi ih spoji</small></span><span class="check">✓</span></div>
+              <div class="flow-step"><span class="step-num">03</span><span><b>Napravi lične QR galerije</b><small>Gost pregleda i bira fotografije telefonom</small></span><span class="check">✓</span></div>
+              <div class="flow-step"><span class="step-num">04</span><span><b>Pošalji izbor za štampu</b><small>Fotograf dobija jasan zahtev</small></span><span class="check">✓</span></div>
+            </div>
+            <div class="flow-foot"><span>✦</span><span><b>Štampaj sa razlogom.</b> Gost je izabrao fotografije koje želi.</span></div>
+          </div>
+          <div class="float-chip chip-local">● &nbsp; Organizacija na računaru fotografa</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="prednosti">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow"><i></i> Više kontrole nad izborom</div>
+          <h2>Manje nagađanja.<br>Više fotografija po želji gosta.</h2>
+          <p>Umesto da se ceo događaj štampa naslepo, gosti pronađu svoje kadrove i označe šta žele. Fotograf dobija pregledan zahtev za štampu.</p>
+        </div>
+        <div class="benefits">
+          <article class="benefit"><div class="benefit-icon">◎</div><h3>Brže pronalaženje fotografija</h3><p>FotoN predlaže grupe lica kroz fotografije događaja. Fotograf pregleda grupe pre izvoza.</p></article>
+          <article class="benefit"><div class="benefit-icon">▦</div><h3>Lična QR galerija za gosta</h3><p>Jedan QR kod vodi gosta do njegove galerije. Za pregled nije potrebna posebna aplikacija na telefonu.</p></article>
+          <article class="benefit"><div class="benefit-icon">✓</div><h3>Jasna želja za štampu</h3><p>Gost bira fotografije na telefonu i šalje izbor fotografu tokom događaja.</p></article>
+          <article class="benefit"><div class="benefit-icon">↗</div><h3>Manje ručnog razvrstavanja</h3><p>Folderi po osobama i pregled zahteva olakšavaju organizaciju nakon fotografisanja.</p></article>
+          <article class="benefit"><div class="benefit-icon">♻</div><h3>Pažljivije prema resursima</h3><p>Izbor unapred može da smanji broj kopija koje ostanu nepreuzete i bace se.</p></article>
+          <article class="benefit"><div class="benefit-icon">✧</div><h3>Provera kvaliteta fotografija</h3><p>U razvojnoj verziji dostupno je izdvajanje mutnih i potpuno crnih kadrova za pregled. Originali se time ne brišu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kako-radi">
+      <div class="wrap">
+        <div class="section-head invert">
+          <div class="eyebrow"><i></i> Jednostavan tok rada</div>
+          <h2>Od fotografisanja<br>do odabranih kopija.</h2>
+          <p>FotoN povezuje računar fotografa, telefon gosta i — kada se podesi — portal laboratorije.</p>
+        </div>
+        <div class="process">
+          <article class="process-card"><span class="num">KORAK 01</span><h3>Uvezi JPEG ili PNG</h3><p>Dodaj fotografije u FotoN. Lica se analiziraju na računaru fotografa.</p></article>
+          <article class="process-card"><span class="num">KORAK 02</span><h3>Pregledaj grupe lica</h3><p>Pregledaj predloge, prilagodi grupisanje i napravi posebne foldere i QR kodove.</p></article>
+          <article class="process-card"><span class="num">KORAK 03</span><h3>Gost bira telefonom</h3><p>Gost skenira svoj QR, pregleda galeriju i označi fotografije koje želi da štampa.</p></article>
+          <article class="process-card"><span class="num">KORAK 04</span><h3>Prikupi zahteve</h3><p>Fotograf vidi ko je izabrao koje fotografije i priprema tačan izbor za štampu.</p></article>
+        </div>
+        <div class="local-lab">
+          <article class="info-panel"><span class="label">Tok događaja</span><h3>Lokalno i pregledno</h3><p>QR galerije rade preko FotoN servera na računaru fotografa. Telefon gosta i računar treba da budu na istoj Wi‑Fi mreži; gost otvara galeriju direktno u pregledaču.</p></article>
+          <article class="info-panel lab"><span class="label">Povezivanje laboratorije</span><h3>Jednim dugmetom, uz originalni kvalitet</h3><p>Kada se podesi HTTPS portal laboratorije, fotograf može da pošalje sve nove zahteve. JPEG/PNG fajlovi se prenose bez smanjivanja ili ponovne kompresije.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="poster-section" aria-labelledby="prezentacija-naslov">
+      <div class="wrap poster-grid">
+        <div class="poster-copy"><div class="eyebrow"><i></i> FotoN ukratko</div><h2 id="prezentacija-naslov">Jedan događaj.<br>Jednostavniji izbor.</h2><p>Preuzmite pregled FotoN toka rada, prednosti i načina saradnje. Kolaž je spreman da ga podelite sa fotografima i kolegama.</p><a class="button secondary" href="assets/foton-prezentacija.png" download="FotoN-prezentacija.png">Preuzmi prezentaciju <span aria-hidden="true">↓</span></a></div>
+        <a href="assets/foton-prezentacija.png" target="_blank" rel="noopener" aria-label="Otvori FotoN prezentaciju u punoj veličini"><img class="poster" src="assets/foton-prezentacija.png" alt="FotoN: tok od događaja i QR galerija do zahteva za štampu, paketi i besplatno testiranje" loading="lazy"></a>
+      </div>
+    </section>
+
+    <section class="section" id="paketi">
+      <div class="wrap">
+        <div class="section-head invert"><div class="eyebrow"><i></i> Način saradnje</div><h2>Podrška prema tvom načinu rada.</h2><p>Izaberi opciju za jedan događaj ili podršku kroz celu sezonu. Za dogovor i ponudu, javi nam se.</p></div>
+        <div class="packages">
+          <article class="package"><span class="package-num">01 · ZA JEDAN DOGAĐAJ</span><h3>Dnevni paket</h3><p>Za venčanje, proslavu ili drugi događaj. Organizacija QR galerija i izbor fotografija za taj događaj.</p><a href="#kontakt">Raspitaj se →</a></article>
+          <article class="package"><span class="package-num">02 · ZA RAD TOKOM GODINE</span><h3>Godišnji paket</h3><p>Za fotografe koji žele da koriste FotoN tokom cele godine i na više događaja.</p><a href="#kontakt">Raspitaj se →</a></article>
+          <article class="package"><span class="package-num">03 · POMOĆ NA LOKACIJI</span><h3>Podrška na terenu</h3><p>Praktična pomoć pri pripremi i korišćenju FotoN-a na konkretnom događaju.</p><a href="#kontakt">Raspitaj se →</a></article>
+          <article class="package"><span class="package-num">04 · UČENJE KORAK PO KORAK</span><h3>Praktična obuka</h3><p>Prođi kroz uvoz fotografija, grupisanje lica, izvoz QR kodova i tok za štampu.</p><a href="#kontakt">Raspitaj se →</a></article>
+        </div>
+        <div class="trial"><div><h3>Probaj FotoN pre odluke.</h3><p>Pozovite nas i zakažite besplatno testiranje aplikacije.</p></div><a class="button" href="https://wa.me/381649786665?text=Zdravo%2C%20zelim%20da%20zakazem%20besplatno%20testiranje%20FotoN-a">Zakaži testiranje <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section light" id="pitanja">
+      <div class="wrap"><div class="section-head"><div class="eyebrow"><i></i> Česta pitanja</div><h2>Pre prvog događaja.</h2></div>
+        <div class="faq">
+          <details><summary>Da li gosti moraju da instaliraju aplikaciju?</summary><p>Ne. Gost skenira QR kod telefonom i galeriju otvara u internet pregledaču.</p></details>
+          <details><summary>Da li fotografije tokom prepoznavanja idu na internet?</summary><p>Prepoznavanje i organizacija fotografija rade na računaru fotografa. Za gostujući QR pregled telefon i računar su na istoj Wi‑Fi mreži.</p></details>
+          <details><summary>Može li izbor da stigne u laboratoriju van lokalne mreže?</summary><p>Može kada fotograf poveže FotoN sa HTTPS portalom laboratorije. Slanje zahteva koristi internet, a originalne slike se prenose bez ponovne kompresije.</p></details>
+          <details><summary>Da li FotoN sam briše mutne i crne fotografije?</summary><p>Ne. Funkcija ih izdvaja za pregled i pomaže da se uklone iz izbora; originali u izvornim folderima ostaju sačuvani.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+      <div class="wrap"><div class="contact-card"><div><div class="eyebrow"><i></i> Besplatno testiranje</div><h2>Hajde da isprobamo FotoN na tvom toku rada.</h2><p>Pozovi nas ili pošalji poruku da zakažemo kratko upoznavanje.</p></div><div class="contact-links"><a class="button" href="tel:+381649786665">Pozovi 064 978 6665</a><a class="button secondary" href="mailto:fotonetworksrb@gmail.com?subject=Zainteresovan%20sam%20za%20FotoN">Pošalji imejl</a></div></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><a href="#vrh"><img src="assets/foton-logo-dark.svg" alt="FotoN"></a><div>FotoN · Organizacija fotografija za venčanja i proslave</div><div class="footer-links"><a href="mailto:fotonetworksrb@gmail.com">fotonetworksrb@gmail.com</a><a href="tel:+381649786665">064 978 6665</a></div></div></footer>
+  <script>
+    const toggle=document.querySelector('#menuToggle');
+    const nav=document.querySelector('#navLinks');
+    toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Zatvori meni':'Otvori meni');toggle.textContent=open?'×':'☰'});
+    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Otvori meni');toggle.textContent='☰'}));
+  </script>
+</body>
+</html>
