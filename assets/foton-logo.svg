@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="150" viewBox="0 0 520 150" role="img" aria-labelledby="title desc">
+<title id="title">FotoN</title><desc id="desc">FotoN logo: camera lens and face-detection focus marks</desc><defs><linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#344b9b"/><stop offset="1" stop-color="#182238"/></linearGradient></defs><g>
+  <rect x="5" y="5" width="140" height="140" rx="34" fill="url(#tile)"/>
+  <path d="M43 54h9l6-9h31l6 9h8a9 9 0 0 1 9 9v40a9 9 0 0 1-9 9H43a9 9 0 0 1-9-9V63a9 9 0 0 1 9-9Z" fill="#101827" stroke="#dfe8ff" stroke-width="3"/>
+  <circle cx="77.5" cy="82" r="21" fill="#172641" stroke="#9db4ff" stroke-width="4"/>
+  <circle cx="77.5" cy="82" r="13" fill="#dce6ff"/>
+  <path d="M77.5 69c6 0 10 3 12 8l-9 5-3-13Zm11 19c-3 5-8 8-13 7l-1-10 14 3Zm-20 5c-5-3-8-8-7-13l10-2-3 15Zm-6-20c3-5 8-8 13-7l2 10-15-3Z" fill="#526fe5"/>
+  <circle cx="77.5" cy="82" r="4" fill="#101827"/>
+  <path d="M25 58v-9h9M121 49h9v9M25 104v9h9m87 0h9v-9" fill="none" stroke="#69e0d0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="106" cy="64" r="3.5" fill="#ffb86b"/>
+</g>
+<text x="174" y="99" font-family="Segoe UI, Arial, sans-serif" font-size="68" font-weight="750" letter-spacing="-3" fill="#172238">Foto<tspan fill="#526fe5">N</tspan></text>
+</svg>
